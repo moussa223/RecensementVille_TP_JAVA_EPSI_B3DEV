@@ -1,9 +1,5 @@
 package fr.epsi.b3.recensement;
-import fr.epsi.b3.recensement.ClasseDeService.AfficherLes10RegionLesPlusPeuplees;
-import fr.epsi.b3.recensement.ClasseDeService.RecherchePopulationDepartement;
-import fr.epsi.b3.recensement.ClasseDeService.RecherchePopulationRegion;
-import fr.epsi.b3.recensement.ClasseDeService.RecherchePopulationVille;
-
+import fr.epsi.b3.recensement.ClasseDeService.*;
 import java.io.*;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -72,6 +68,8 @@ public class Application {
                     recherche4.traiter(recensements,scanner);
                     break;
                 case 5:
+                    AfficherLes10DepartementsLesPlusPeuples recherche5 = new AfficherLes10DepartementsLesPlusPeuples();
+                    recherche5.traiter(recensements,scanner);
                     break;
                 case 6:
                     break;
@@ -86,4 +84,3 @@ public class Application {
         }
     }
 }
-
