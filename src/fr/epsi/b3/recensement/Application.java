@@ -1,5 +1,7 @@
 package fr.epsi.b3.recensement;
+import fr.epsi.b3.recensement.ClasseDeService.AfficherLes10RegionLesPlusPeuplees;
 import fr.epsi.b3.recensement.ClasseDeService.RecherchePopulationDepartement;
+import fr.epsi.b3.recensement.ClasseDeService.RecherchePopulationRegion;
 import fr.epsi.b3.recensement.ClasseDeService.RecherchePopulationVille;
 
 import java.io.*;
@@ -48,8 +50,7 @@ public class Application {
         int choix=-1;
         while ( choix!=9){
             System.out.println("|_______________________________________________________________________________________|");
-            System.out.println("                     Bienvenu Dans l'appli de recensement de villes \n " +
-                    "                  Veuillez choisir l'action que vous voulez effectuer");
+            System.out.println(" |MENU APPLICATION RECENSEMENT 2016 | Choisissez l'action à effectuer");
             System.out.println("|_______________________________________________________________________________________|");
             Menuservice.afficheLeMenu();
             choix=Integer.parseInt(scanner.nextLine());
@@ -63,8 +64,12 @@ public class Application {
                     recherche1.traiter(recensements,scanner);
                     break;
                 case 3:
+                    RecherchePopulationRegion recherche2= new RecherchePopulationRegion();
+                    recherche2.traiter(recensements,scanner);
                     break;
                 case 4:
+                    AfficherLes10RegionLesPlusPeuplees recherche4=new AfficherLes10RegionLesPlusPeuplees();
+                    recherche4.traiter(recensements,scanner);
                     break;
                 case 5:
                     break;
