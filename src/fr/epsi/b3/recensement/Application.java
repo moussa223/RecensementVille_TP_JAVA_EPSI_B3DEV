@@ -72,10 +72,16 @@ public class Application {
                     recherche5.traiter(recensements,scanner);
                     break;
                 case 6:
+                    AfficherLes10VillesLesPlusPeupleesDunDepartement recherche6 = new AfficherLes10VillesLesPlusPeupleesDunDepartement();
+                    recherche6.traiter(recensements,scanner);
                     break;
                 case 7:
+                    AfficherLes10VillesLesPlusPeupleesDuneRegion recherche7 = new AfficherLes10VillesLesPlusPeupleesDuneRegion();
+                    recherche7.traiter(recensements,scanner);
                     break;
                 case 8:
+                    AfficherLes10VillesLesPlusPeupleesDeFrance recherche8 = new AfficherLes10VillesLesPlusPeupleesDeFrance();
+                    recherche8.traiter(recensements,scanner);
                     break;
                 default:
                     System.out.println("Vous avez choisi de Fermer de l'application");
