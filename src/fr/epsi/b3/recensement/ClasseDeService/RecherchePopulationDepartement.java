@@ -7,7 +7,7 @@ public class RecherchePopulationDepartement extends Menuservice {
     @Override
     public void traiter(recensement recensement, Scanner scanner) {
 
-        System.out.println("\n Veuillez entrez le numéro d'un département");
+        System.out.println("\n Veuillez entrez code d'un département");
         String numérodepartement = scanner.nextLine();
         boolean verification = false;
 

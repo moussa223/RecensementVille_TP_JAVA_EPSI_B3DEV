@@ -85,7 +85,7 @@ public class Application {
                     break;
                 default:
                     System.out.println("Vous avez choisi de Fermer de l'application");
-                    System.err.println("Fermeture de l'application");
+                    System.err.println("Fermeture de l'application......");
             }
         }
     }
